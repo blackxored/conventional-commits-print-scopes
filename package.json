@@ -1,6 +1,6 @@
 {
   "name": "conventional-commits-print-scopes",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Small utility to print all scopes in a Conventional Commits repo",
   "main": "index.js",
   "scripts": {
