@@ -1,31 +1,69 @@
 {
   "name": "conventional-commits-print-scopes",
-  "version": "1.4.0",
+  "version": "0.0.0-development",
   "description": "Small utility to print all scopes in a Conventional Commits repo",
-  "main": "index.js",
+  "main": "src/cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "commit",
+    "precommit": "lint-staged",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "lint": "eslint",
+    "add-contributor": "all-contributors add",
+    "generate-contributors": "all-contributors generate",
+    "test": "jest",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "bin": {
     "conventional-commits-print-scopes": "src/cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blackxored/conventional-commits-print-scopes.git"
+    "url": "https://github.com/blackxored/conventional-commits-print-scopes.git"
   },
   "keywords": [
     "conventional-commits",
     "conventional-changelog",
     "git"
   ],
+  "engines": {
+    "node": ">= 6",
+    "npm": ">= 3"
+  },
   "author": "Adrian Perez <adrian@adrianperez.org> (https://adrianperez.codes/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/blackxored/conventional-commits-print-scopes/issues"
   },
   "homepage": "https://github.com/blackxored/conventional-commits-print-scopes#readme",
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --trailing-comma es5 --tab-width 2 --single-quote --print-width 80"
+    ]
+  },
+  "config": {
+    "commitzen": {
+      "path": "@commitlint/prompt"
+    }
+  },
   "dependencies": {
     "git-log-reader": "^0.1.0",
     "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^4.2.2",
+    "@commitlint/config-angular": "^3.1.1",
+    "all-contributors-cli": "^4.6.0",
+    "commitizen": "^2.9.6",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-plugin-jest": "^21.3.2",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "lint-staged": "^4.1.3",
+    "prettier": "^1.8.1",
+    "semantic-release": "^8.2.0"
   }
 }
