@@ -21,6 +21,13 @@
 Small utility to print all scopes from a repository that follows [Conventional Commits][conventional-commits]
 or Angular-like commit conventions.
 
+## Why
+
+When you're contributing to a new repository that follows the Conventional Commits specification, or alternatively,
+the Angular one, is sometimes difficult to figure out which scopes previous contributors have used. While you could
+leave that to the maintainer, this utility makes it easier to learn which scopes are used in a particular repository,
+so you can format your commit message accordingly.
+
 ## Installing / Getting Started
 
 
