@@ -2,6 +2,7 @@
 
 exports[`getScopes works 1`] = `
 Array [
+  "package",
   "release",
 ]
 `;
