@@ -1,3 +1,10 @@
+# Build
+lib
+es
+.yo-rc.json
+.idea
+*.iml
+
 # Logs
 logs
 *.log
