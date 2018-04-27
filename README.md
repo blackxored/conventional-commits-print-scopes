@@ -1,5 +1,7 @@
 # conventional-commits-print-scopes
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/blackxored/conventional-commits-print-scopes.svg)](https://greenkeeper.io/)
+
 [![Semantically Released][semantic-release-badge]][semantic-release]
 [![Build Status][build-badge]][build]
 [![Code Coverage][coverage-badge]][coverage]
