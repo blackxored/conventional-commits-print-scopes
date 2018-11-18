@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "git-log-reader": "^0.1.0",
-    "ramda": "^0.25.0"
+    "ramda": "^0.26.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.1.3",
